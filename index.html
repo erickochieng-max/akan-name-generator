@@ -13,22 +13,35 @@
     <p>
 
     </p>
-    <!-- submission section -->
-<!-- <section class="submission"> -->
-
-    <!-- submission form -->
+    
+    <!-- akan form -->
 
     <form action="akanForm">
-        <label for="day">Day:</label>
+        <label for="day">Day</label>
         <input type="number" placeholder="day" required>
+
         <label  for="month">Month</label>
         <input type="number" placeholder="month" required>
+
+        <label for="year">Year</label>
+        <input type="year" placeholder="year" required>
+
+        <label>Gender</label>
+    <select id="gender" required>
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
         <button type="submit">Send Message</button>
     </form> 
+<h2 id="result"></h2>
 
-    <footer>
-        <p>© Akan</p>
+<script src="script.js"></script>
+
+   <footer>
+        <p>© Akan Name Generator</p>
     </footer>
-    <!-- </section> -->
+    
 </body>
 </html>
