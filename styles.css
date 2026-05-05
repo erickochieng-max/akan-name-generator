@@ -3,12 +3,17 @@
 body{
     margin: 0;
     font-family: "Ubuntu", sans-serif;
+    align-items: center;
+    background-color: #f2eaf7;
+    justify-content: space-between;
+    display: flex; 
+    height: 100vh;
 }
 
-head{
-    display: flex;
-    justify-content: space-between;
-    background:#fff8e7;
-    color: #ffd77a;
-    padding: 10px 40px;
+.holder{
+    background: #cd9dd9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    /* width: 300px; */
 }

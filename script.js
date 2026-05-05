@@ -1,5 +1,7 @@
+document.getElementById("akanForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let day = Number(document.getElementById("day").value);
     let month = Number(document.getElementById("month").value);
     let year = Number(document.getElementById("year").value);
     let gender = document.getElementById("gender").value;
@@ -33,8 +35,17 @@ let YY = year % 100;
 
 // Calculate the day of the week
 let d = Math.floor
-((4 * CC - 2 * CC - 1) + (5 * YY / 4) + (26 * (month + 1) / 10) + day
+((4 * CC - 2 * CC - 1) + (45 * YY / 4) + (1026 * (MM + 1) / 10) + day
 ) % 7;
 
 // fix negative values
 if (d < 0) d += 7
+
+// Akan names
+let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama" ]
+
+let name = gender === "male" ? maleNames[d] : femaleNames[d];
+
+document.getElementById("result").innerText = 'Your Akan name is ${name}';
+});
