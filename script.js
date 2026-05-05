@@ -32,6 +32,9 @@ let CC = Math.floor(year / 100);
 let YY = year % 100;
 
 // Calculate the day of the week
-let d = Math.floor(
+let d = Math.floor
 ((4 * CC - 2 * CC - 1) + (5 * YY / 4) + (26 * (month + 1) / 10) + day
 ) % 7;
+
+// fix negative values
+if (d < 0) d += 7
