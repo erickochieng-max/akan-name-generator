@@ -1,8 +1,8 @@
 
-    let day = (getElementById("day").value);
-    let month = (getElementById("month").value);
-    let year = (getElementById("year").value);
-    let gender = (getElementById().value)
+    let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let month = Number(document.getElementById("month").value);
+    let year = Number(document.getElementById("year").value);
+    let gender = document.getElementById("gender").value;
 
     if (isNaN(day) || isNaN(month) || isNaN(year)) {
         alert("Please only valid numbers required");
@@ -24,4 +24,3 @@
         return;
     }
 
-    console.log(checkDay(32));
