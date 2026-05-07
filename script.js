@@ -8,22 +8,28 @@ const femaleNames =["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama",];
 document.getElementById('akan-form').addEventListener('submit',function(event) {
     event.preventDefault();
 
-    // const birthdayInput = document.getElementById('birthday').value;
-    // const genderElement = document.querySelector('input[name="gender"]:checked')
-
-    // if (!birthdayInput || ! genderElement) {
-    //     alert("please select your birthdate andgender!"); return;
-    // }
-
-    // const gender =genderElement.value;
-    // const dateObj = new Date(birthdayInput);
-    // const DD = dateObj.getDate();
-    // const MM = dateObj.getMonth() +1;
-    // const year = dateObj.getFullYear();
     const DD = Number(document.getElementById('day').value);
     const MM = Number(document.getElementById('month').value);
     const year = Number(document.getElementById('year').value);
     const gender = document.getElementById('gender').value;
+
+    // validation
+    
+    if (DD < 1 || DD > 31){
+        alert("Enter a valid day")
+        return;
+    }
+
+    if (MM <1 || MM > 12){
+        alert("Enter a valid Month")
+        return;
+    }
+
+    if (!gender){
+        alert("Please insert gender")
+        return;
+    }
+
     const CC = parseInt(year.toString().slice(0,2));
     const YY = parseInt(year.toString().slice(2,4));
 
