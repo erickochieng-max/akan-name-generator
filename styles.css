@@ -12,6 +12,10 @@ h1{
     margin-top: 40px;
     color: black;
 }
+h1:hover{
+    color: green;
+    transform: 0.7;
+}
 
 .holder{
     background-color: green;
@@ -53,6 +57,7 @@ button{
 
 button:hover{
 background-color: red;
+transform: scale(0.8);
 }
 
 #result{

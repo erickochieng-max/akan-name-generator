@@ -9,6 +9,7 @@ Erick Ochieng
 
 # Setup Instructions
 1. Cloned the repository :
+click here to view website: https://github.com/erickochieng-max/akan-name-generator.git
 
 2. Opened the repository from Ubuntu to VS code
 
