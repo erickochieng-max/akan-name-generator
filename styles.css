@@ -21,6 +21,10 @@ h1{
     border-radius: 10px;
     box-shadow: 0px 0px 12px rgba(0, 0,0, 0);
 }
+.holder:hover{
+    box-shadow: 0px 0px 40px black;
+    transform: scale(1.02);
+}
 
 form{
     display: flex;
