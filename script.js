@@ -2,7 +2,7 @@ window.addEventListener("load", function() {
     console.log("Page fully loaded with all resources!");
 });
 
-"(Starting with sunday at index 0)"
+
 const maleNames =["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 const femaleNames =["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama",];
 
@@ -53,14 +53,16 @@ document.getElementById('akan-form').addEventListener('submit',function(event) {
 // Results
     const resultDisplay = document.getElementById('results');
 
-    resultDisplay.innerText = "Your Akan name is" + akanName + "!";
+    resultDisplay.innerText = "Your Akan name is " + akanName + "!";
 
-    resultDisplay.style.color = "blue";
+    resultDisplay.style.color = "Black";
+
+    setTimeout(function () {
+        location.reload();
+
+    }, 10000);
+
+    
 });
 
-
-// function getDayName(dayIndex) {
-//     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-//     return days[dayIndex];
-// }
 

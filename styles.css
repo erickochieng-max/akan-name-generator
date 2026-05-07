@@ -3,7 +3,7 @@
 body{
     margin: 0;
     font-family: "Ubuntu", sans-serif;
-    background-color: #f2eaf7;
+    background-color: gold;
     padding: 0;
     text-align: center;
 }
@@ -14,7 +14,7 @@ h1{
 }
 
 .holder{
-    background-color: white;
+    background-color: green;
     width: 360px;
     margin: 40px auto;
     padding: 25px;
@@ -44,5 +44,26 @@ button{
     color: white;
     border: none;
     cursor: pointer;
-    
+
+}
+
+button:hover{
+background-color: red;
+}
+
+#result{
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 22px;
+}
+
+p{
+    text-align: center;
+    padding: 20px;
+    /* color: white; */
+
 }
